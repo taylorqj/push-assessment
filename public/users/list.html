@@ -1,0 +1,8 @@
+<h3>Users</h3>
+
+<div class="col-md-4" ng-repeat="user in users | orderBy: 'name'">
+    <h4>{{ user.name }}</h5>
+    <ul class="list-group">
+        <li ng-repeat="task in user.tasks" class="list-group-item">{{ task }}</li>
+    </ul>
+</div>
