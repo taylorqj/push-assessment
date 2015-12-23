@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "postinstall": "bower install"
+    "postinstall": "bower cache clean && bower install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.7.1",
     "config": "^1.17.1",
     "express": "^4.13.3"
   }
